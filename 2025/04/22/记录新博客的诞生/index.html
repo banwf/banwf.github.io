@@ -139,10 +139,10 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="http://example.com/tags/">
+  <link rel="canonical" href="http://example.com/2025/04/22/记录新博客的诞生/">
   <title>
     
-      Tags - banwf的博客
+      使用 GitHub + Hexo 搭建个人博客全记录 - banwf的博客
     
   </title>
 <meta name="generator" content="Hexo 5.4.2"></head>
@@ -300,29 +300,7 @@
           <!-- LangSelect -->
           
           
-          <!-- LangSelect start -->
-          <!-- LangSelect -->
-<li>
-  <a id="lang-select-label"><i class="fa fa-globe"></i>
-    <span>
-      简体中文
-    </span>
-    <select id="lang-select" data-canonical="tags/index.html">
-      
-      
-      <option value="en" >
-        English
-      </option>
-      
-      <option value="cn"  selected >
-        简体中文
-      </option>
-      
-    </select>
-  </a>
-</li>
-
-          <!-- LangSelect end -->
+          
           
           
         </ul>
@@ -374,19 +352,19 @@
     .body--light {
       /* intro-header */
       --intro-header-background-image-url-home: url('/img/chibi.jpg');
-      --intro-header-background-image-url-post: url('img/header_img/tag_bg.jpg');
-      --intro-header-background-image-url-page: url('/img/header_img/tag_bg.jpg');
+      --intro-header-background-image-url-post: url('/img/header_img/lml_bg.jpg');
+      --intro-header-background-image-url-page: url('//img/header_img/lml_bg.jpg');
     }
     .body--dark {
       --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/chibi.jpg');
-      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('img/header_img/tag_bg.jpg');
-      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/tag_bg.jpg');
+      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/lml_bg.jpg');
+      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('//img/header_img/lml_bg.jpg');
     }
 
     header.intro-header {
-       /*page*/
-        background-image: var(--intro-header-background-image-url-page);
-        /* background-image: url('/img/header_img/tag_bg.jpg'); */
+       /*post*/
+        background-image: var(--intro-header-background-image-url-post);
+        /* background-image: url('/img/header_img/lml_bg.jpg'); */
       
     }
 
@@ -404,10 +382,44 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           
-          <div class="site-heading">
-            <h1>Tags</h1>
-            <!--<hr class="small">-->
-            <span class="subheading">I don’t know where I am going, but I am on my way......</span>
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#hexo" title="hexo">hexo</a>
+              
+              <a class="tag" href="/tags/#博客" title="博客">博客</a>
+              
+            </div>
+            <h1>使用 GitHub + Hexo 搭建个人博客全记录</h1>
+            <h2 class="subheading">部署一个个人博客竟如此简单</h2>
+            <span class="meta">
+              Posted by banwf on
+              2025-04-22
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">1</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">392</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- WordCount end -->
+            
+            
+            <!-- 不蒜子统计 start -->
+            <span class="meta" id="busuanzi_container_page_pv">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            
+
+
           </div>
           
         </div>
@@ -448,127 +460,293 @@
 	Friends Blog、
 	anchorjs、
 	) -->
-		<!-- Main Content -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <!-- 标签列表 -->
+		<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
-      <!-- 标签云 -->
-      <div id='tag_cloud' class="tags">
+        <h1>使用 GitHub + Hexo 搭建个人博客全记录</h1>
+<p><img src="https://hexo.io/logo.svg" alt="Hexo Logo"></p>
+<h2 id="一、创建-GitHub-仓库">一、创建 GitHub 仓库</h2>
+<ol>
+<li>新建名为 <code>&lt;用户名&gt;.github.io</code> 的公开仓库</li>
+<li>在仓库设置中启用 GitHub Pages（部署后生效）</li>
+</ol>
+<h2 id="二、Windows-生成-SSH-Key">二、Windows 生成 SSH Key</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 打开 Git Bash 执行</span></span><br><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;your_email@example.com&quot;</span></span><br><span class="line"><span class="comment"># 连续回车使用默认路径</span></span><br><span class="line"><span class="built_in">cat</span> ~/.ssh/id_rsa.pub  <span class="comment"># 复制输出的全部内容</span></span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>在 GitHub Settings → SSH and GPG keys 添加新 SSH Key</li>
+</ol>
+<h2 id="三、Hexo-安装与初始化">三、Hexo 安装与初始化</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init myblog</span><br><span class="line"><span class="built_in">cd</span> myblog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<h2 id="四、主题安装问题解决">四、主题安装问题解决</h2>
+<p>当 npm install 卡顿时：<br>
+1.删除 node_modules 文件夹<br>
+2.删除 package-lock.json<br>
+3.重新执行 npm install</p>
+<h2 id="五、Hexo-核心命令">五、Hexo 核心命令</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">hexo clean         <span class="comment"># 清除缓存</span></span><br><span class="line">hexo generate      <span class="comment"># 生成静态文件（简写 hexo g）</span></span><br><span class="line">hexo server        <span class="comment"># 本地预览（hexo s）</span></span><br><span class="line">hexo deploy        <span class="comment"># 部署到GitHub（hexo d）</span></span><br><span class="line">hexo g -d          <span class="comment"># 生成静态文件并部署</span></span><br><span class="line">hexo new <span class="string">&quot;文章标题&quot;</span> <span class="comment"># 新建文章</span></span><br></pre></td></tr></table></figure>
+<h2 id="六、文章编写规范">六、文章编写规范</h2>
+<p>1.文章头部 Front-matter：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">使用</span> <span class="string">GitHub</span> <span class="string">+</span> <span class="string">Hexo</span> <span class="string">搭建个人博客全记录</span></span><br><span class="line"><span class="attr">catalog:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2025-04-22 20:55:33</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">部署一个个人博客竟如此简单</span></span><br><span class="line"><span class="attr">header-img:</span> <span class="string">/img/header_img/lml_bg.jpg</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">hexo</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">博客</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">杂七杂八</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+<p>2.图片引用方式：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">![</span><span class="string">图片描述](图片路径)</span></span><br></pre></td></tr></table></figure>
+<p>在 _config.yml 中启用资源目录：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>创建文章时自动生成同名资源文件夹<br>
+图片路径使用相对路径：/文章标题/图片.jpg</p>
+<h2 id="七、部署配置">七、部署配置</h2>
+<p>安装部署插件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>修改 _config.yml：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:&lt;用户名&gt;/&lt;用户名&gt;.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          
+          <li class="next">
+            <a href="/2025/04/22/写在前面：新的开始/" data-toggle="tooltip" data-placement="top" title="写在前面：新的开始">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
         
-        <a href="#随笔" title="随笔" rel="1">随笔</a>
+        <!-- tip start -->
+        <!-- tip -->
+<!-- tip start -->
+<div class="tip">
+  <p>
+    
+      如果您喜欢此博客或发现它对您有用，则欢迎对此发表评论。 也欢迎您共享此博客，以便更多人可以参与。 如果博客中使用的图像侵犯了您的版权，请与作者联系以将其删除。 谢谢 ！
+    
+  </p>
+</div>
+<!-- tip end -->
+
+        <!-- tip end -->
         
-        <a href="#伤痕文学" title="伤痕文学" rel="1">伤痕文学</a>
+
         
-        <a href="#hexo" title="hexo" rel="1">hexo</a>
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=使用 GitHub + Hexo 搭建个人博客全记录&body=Hi,I found this website and thought you might like it http://example.com/2025/04/22/记录新博客的诞生/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
         
-        <a href="#博客" title="博客" rel="1">博客</a>
-        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+  <!-- gitalk start -->
+  <!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+  <div id="gitalk-container"></div>
+
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+    <script src="/js/comment/gitalk.js"></script>
+  
+
+  <script>
+    var gitalk = new Gitalk({
+      clientID: '',
+      clientSecret: '',
+      repo: '',
+      owner: '',
+      admin: '',
+      id: 'Tue Apr 22 2025 20:55:33 GMT+0800', // Ensure uniqueness and length less than 50
+      distractionFreeMode: false, // Facebook-like distraction free mode
+      perPage: 10,
+      pagerDirection: 'last',
+      createIssueManually: false,
+      language: 'en',
+      proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
+    });
+    gitalk.render('gitalk-container');
+
+    var gtFolded = () => {
+      setTimeout(function () {
+        let markdownBody = document.getElementsByClassName("markdown-body");
+        let list = Array.from(markdownBody);
+        list.forEach(item => {
+          if (item.clientHeight > 250) {
+            item.classList.add('gt-comment-body-folded');
+            item.style.maxHeight = '250px';
+            item.title = 'Click to Expand';
+            item.onclick = function () {
+              item.classList.remove('gt-comment-body-folded');
+              item.style.maxHeight = '';
+              item.title = '';
+              item.onclick = null;
+            };
+          }
+        })
+      }, 800);
+    }
+  </script>
+
+  <!-- gitalk end -->
+
+
+<!-- 2. gitment comment -->
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
       </div>
 
-      <!-- 标签列表 -->
-      
-      <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="随笔">
-          <span class="tag-text">随笔</span>
-        </span>
-        
-        <div class="post-preview">
-          <a href="/2025/04/22/写在前面：新的开始/">
-            <h2 class="post-title">
-              写在前面：新的开始
-              
-              -- cn
-              
-            </h2>
-            
-            <h3 class="post-subtitle">
-              Move It！！！！！！！！！！！！！！！！！！！！！！！
-            </h3>
-            
-          </a>
-        </div>
-        <hr>
-        
-      </div>
-      
-      <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="伤痕文学">
-          <span class="tag-text">伤痕文学</span>
-        </span>
-        
-        <div class="post-preview">
-          <a href="/2025/04/22/写在前面：新的开始/">
-            <h2 class="post-title">
-              写在前面：新的开始
-              
-              -- cn
-              
-            </h2>
-            
-            <h3 class="post-subtitle">
-              Move It！！！！！！！！！！！！！！！！！！！！！！！
-            </h3>
-            
-          </a>
-        </div>
-        <hr>
-        
-      </div>
-      
-      <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="hexo">
-          <span class="tag-text">hexo</span>
-        </span>
-        
-        <div class="post-preview">
-          <a href="/2025/04/22/记录新博客的诞生/">
-            <h2 class="post-title">
-              使用 GitHub + Hexo 搭建个人博客全记录
-              
-              -- cn
-              
-            </h2>
-            
-            <h3 class="post-subtitle">
-              部署一个个人博客竟如此简单
-            </h3>
-            
-          </a>
-        </div>
-        <hr>
-        
-      </div>
-      
-      <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="博客">
-          <span class="tag-text">博客</span>
-        </span>
-        
-        <div class="post-preview">
-          <a href="/2025/04/22/记录新博客的诞生/">
-            <h2 class="post-title">
-              使用 GitHub + Hexo 搭建个人博客全记录
-              
-              -- cn
-              
-            </h2>
-            
-            <h3 class="post-subtitle">
-              部署一个个人博客竟如此简单
-            </h3>
-            
-          </a>
-        </div>
-        <hr>
-        
-      </div>
-      
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
 
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">目录</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">使用 GitHub + Hexo 搭建个人博客全记录</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E4%B8%80%E3%80%81%E5%88%9B%E5%BB%BA-GitHub-%E4%BB%93%E5%BA%93"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">一、创建 GitHub 仓库</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E4%BA%8C%E3%80%81Windows-%E7%94%9F%E6%88%90-SSH-Key"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">二、Windows 生成 SSH Key</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E4%B8%89%E3%80%81Hexo-%E5%AE%89%E8%A3%85%E4%B8%8E%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-nav-number">1.3.</span> <span class="toc-nav-text">三、Hexo 安装与初始化</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%9B%9B%E3%80%81%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3"><span class="toc-nav-number">1.4.</span> <span class="toc-nav-text">四、主题安装问题解决</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E4%BA%94%E3%80%81Hexo-%E6%A0%B8%E5%BF%83%E5%91%BD%E4%BB%A4"><span class="toc-nav-number">1.5.</span> <span class="toc-nav-text">五、Hexo 核心命令</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%85%AD%E3%80%81%E6%96%87%E7%AB%A0%E7%BC%96%E5%86%99%E8%A7%84%E8%8C%83"><span class="toc-nav-number">1.6.</span> <span class="toc-nav-text">六、文章编写规范</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E4%B8%83%E3%80%81%E9%83%A8%E7%BD%B2%E9%85%8D%E7%BD%AE"><span class="toc-nav-number">1.7.</span> <span class="toc-nav-text">七、部署配置</span></a></li></ol></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">特色标签</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#hexo" title="hexo">hexo</a>
+            
+            <a class="tag" href="/tags/#博客" title="博客">博客</a>
+            
+          </div>
+        </section>
+        
+
+        <!-- Friends Blog -->
+        
+        <hr>
+        <h5>链友</h5>
+        <ul class="list-inline">
+
+          
+          <li>
+            <a href="https://hexo.io/" target="_blank">Hexo</a>
+          </li>
+          
+          <li>
+            <a href="https://dufolk.github.io/" target="_blank">无敌鹏神</a>
+          </li>
+          
+        </ul>
+        
+      </div>
     </div>
   </div>
-</div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
 
 
 		<!-- Footer (contains ThemeColor、viewer) -->
