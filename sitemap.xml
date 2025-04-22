@@ -38,15 +38,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/2020/04/17/Hexo-Theme-LiveMyLife/</loc>
-    
-    <lastmod>2020-04-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/archive/index.html</loc>
     
     <lastmod>2017-03-20</lastmod>
@@ -74,13 +65,6 @@
 
   
   <url>
-    <loc>http://example.com/tags/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/tags/%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2025-04-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -95,12 +79,5 @@
   </url>
   
 
-  
-  <url>
-    <loc>http://example.com/categories/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
 </urlset>
